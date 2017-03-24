@@ -32,8 +32,6 @@
             this.lblListaClientes = new System.Windows.Forms.Label();
             this.Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Cpf = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.link = new System.Windows.Forms.DataGridViewLinkColumn();
-            this.Exibir = new System.Windows.Forms.DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).BeginInit();
             this.SuspendLayout();
             // 
@@ -44,16 +42,14 @@
             this.dgvClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvClientes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Nome,
-            this.Cpf,
-            this.link,
-            this.Exibir});
+            this.Cpf});
             this.dgvClientes.Location = new System.Drawing.Point(12, 37);
             this.dgvClientes.Name = "dgvClientes";
             this.dgvClientes.ReadOnly = true;
             this.dgvClientes.Size = new System.Drawing.Size(423, 212);
             this.dgvClientes.TabIndex = 0;
             this.dgvClientes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvClientes_CellContentClick);
-            this.dgvClientes.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvClientes_RowHeaderMouseClick);
+            this.dgvClientes.SelectionChanged += new System.EventHandler(this.dgvClientes_SelectionChanged);
             // 
             // lblListaClientes
             // 
@@ -74,23 +70,10 @@
             // 
             // Cpf
             // 
+            this.Cpf.DataPropertyName = "Cpf";
             this.Cpf.HeaderText = "Cpf";
             this.Cpf.Name = "Cpf";
             this.Cpf.ReadOnly = true;
-            // 
-            // link
-            // 
-            this.link.HeaderText = "Ver Detalhes";
-            this.link.Name = "link";
-            this.link.ReadOnly = true;
-            this.link.Text = "Editar";
-            // 
-            // Exibir
-            // 
-            this.Exibir.HeaderText = "Edit";
-            this.Exibir.Name = "Exibir";
-            this.Exibir.ReadOnly = true;
-            this.Exibir.Text = "Editar";
             // 
             // frmListagemClientes
             // 
@@ -114,7 +97,5 @@
         private System.Windows.Forms.Label lblListaClientes;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nome;
         private System.Windows.Forms.DataGridViewTextBoxColumn Cpf;
-        private System.Windows.Forms.DataGridViewLinkColumn link;
-        private System.Windows.Forms.DataGridViewButtonColumn Exibir;
     }
 }

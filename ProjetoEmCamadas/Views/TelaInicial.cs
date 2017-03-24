@@ -20,7 +20,7 @@ namespace Views
 
         private void cadastroToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmCadastroCliente cadCliente = new frmCadastroCliente();
+            frmCadastroCliente cadCliente = new frmCadastroCliente(null);
             cadCliente.MdiParent = this;
             cadCliente.Show();
         }

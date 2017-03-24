@@ -79,6 +79,7 @@
             this.Controls.Add(this.txtNome);
             this.Name = "frmCadastroCliente";
             this.Text = "frmCadastroCliente";
+            this.Load += new System.EventHandler(this.frmCadastroCliente_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
