@@ -1,6 +1,6 @@
 ﻿namespace Views
 {
-    partial class frmCadastroCliente
+    partial class frmCadastroCarro
     {
         /// <summary>
         /// Required designer variable.
@@ -28,90 +28,90 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnCancelar = new System.Windows.Forms.Button();
             this.btnSalvar = new System.Windows.Forms.Button();
-            this.txtNome = new System.Windows.Forms.TextBox();
-            this.txtCpf = new System.Windows.Forms.TextBox();
+            this.btnCancelar = new System.Windows.Forms.Button();
+            this.txtAno = new System.Windows.Forms.TextBox();
+            this.txtModelo = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // btnCancelar
-            // 
-            this.btnCancelar.Location = new System.Drawing.Point(197, 91);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(75, 23);
-            this.btnCancelar.TabIndex = 2;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
-            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
-            // 
             // btnSalvar
             // 
-            this.btnSalvar.Location = new System.Drawing.Point(116, 91);
+            this.btnSalvar.Location = new System.Drawing.Point(112, 94);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(75, 23);
-            this.btnSalvar.TabIndex = 3;
+            this.btnSalvar.TabIndex = 4;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = true;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
-            // txtNome
+            // btnCancelar
             // 
-            this.txtNome.Location = new System.Drawing.Point(53, 26);
-            this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(219, 20);
-            this.txtNome.TabIndex = 0;
+            this.btnCancelar.Location = new System.Drawing.Point(193, 94);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(75, 23);
+            this.btnCancelar.TabIndex = 5;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
-            // txtCpf
+            // txtAno
             // 
-            this.txtCpf.Location = new System.Drawing.Point(53, 53);
-            this.txtCpf.Name = "txtCpf";
-            this.txtCpf.Size = new System.Drawing.Size(219, 20);
-            this.txtCpf.TabIndex = 1;
+            this.txtAno.Location = new System.Drawing.Point(49, 55);
+            this.txtAno.Name = "txtAno";
+            this.txtAno.Size = new System.Drawing.Size(219, 20);
+            this.txtAno.TabIndex = 7;
+            // 
+            // txtModelo
+            // 
+            this.txtModelo.Location = new System.Drawing.Point(49, 28);
+            this.txtModelo.Name = "txtModelo";
+            this.txtModelo.Size = new System.Drawing.Size(219, 20);
+            this.txtModelo.TabIndex = 6;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(9, 29);
+            this.label1.Location = new System.Drawing.Point(1, 31);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 13);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Nome:";
+            this.label1.Size = new System.Drawing.Size(45, 13);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Modelo:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(9, 56);
+            this.label2.Location = new System.Drawing.Point(1, 58);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(30, 13);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "CPF:";
+            this.label2.Size = new System.Drawing.Size(29, 13);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "Ano:";
             // 
-            // frmCadastroCliente
+            // frmCadastroCarro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 126);
+            this.ClientSize = new System.Drawing.Size(284, 129);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnSalvar);
+            this.Controls.Add(this.txtAno);
+            this.Controls.Add(this.txtModelo);
             this.Controls.Add(this.btnCancelar);
-            this.Controls.Add(this.txtCpf);
-            this.Controls.Add(this.txtNome);
-            this.Name = "frmCadastroCliente";
-            this.Text = "frmCadastroCliente";
-            this.Load += new System.EventHandler(this.frmCadastroCliente_Load);
+            this.Controls.Add(this.btnSalvar);
+            this.Name = "frmCadastroCarro";
+            this.Text = "frmCadastroCarro";
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Button btnCancelar;
+
         private System.Windows.Forms.Button btnSalvar;
-        private System.Windows.Forms.TextBox txtNome;
-        private System.Windows.Forms.TextBox txtCpf;
+        private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.TextBox txtAno;
+        private System.Windows.Forms.TextBox txtModelo;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
     }

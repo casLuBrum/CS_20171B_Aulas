@@ -34,10 +34,10 @@
             this.listagemToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.carroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cadastroToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.listagemToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.lblDataAtual = new System.Windows.Forms.ToolStripStatusLabel();
-            this.listagemToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -65,14 +65,14 @@
             // cadastroToolStripMenuItem
             // 
             this.cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
-            this.cadastroToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.cadastroToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.cadastroToolStripMenuItem.Text = "Cadastro";
             this.cadastroToolStripMenuItem.Click += new System.EventHandler(this.cadastroToolStripMenuItem_Click);
             // 
             // listagemToolStripMenuItem
             // 
             this.listagemToolStripMenuItem.Name = "listagemToolStripMenuItem";
-            this.listagemToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.listagemToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.listagemToolStripMenuItem.Text = "Listagem";
             this.listagemToolStripMenuItem.Click += new System.EventHandler(this.listagemToolStripMenuItem_Click);
             // 
@@ -90,6 +90,14 @@
             this.cadastroToolStripMenuItem1.Name = "cadastroToolStripMenuItem1";
             this.cadastroToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.cadastroToolStripMenuItem1.Text = "Cadastro";
+            this.cadastroToolStripMenuItem1.Click += new System.EventHandler(this.cadastroToolStripMenuItem1_Click);
+            // 
+            // listagemToolStripMenuItem1
+            // 
+            this.listagemToolStripMenuItem1.Name = "listagemToolStripMenuItem1";
+            this.listagemToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.listagemToolStripMenuItem1.Text = "Listagem";
+            this.listagemToolStripMenuItem1.Click += new System.EventHandler(this.listagemToolStripMenuItem1_Click);
             // 
             // statusStrip1
             // 
@@ -112,12 +120,6 @@
             // 
             this.lblDataAtual.Name = "lblDataAtual";
             this.lblDataAtual.Size = new System.Drawing.Size(0, 17);
-            // 
-            // listagemToolStripMenuItem1
-            // 
-            this.listagemToolStripMenuItem1.Name = "listagemToolStripMenuItem1";
-            this.listagemToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
-            this.listagemToolStripMenuItem1.Text = "Listagem";
             // 
             // TelaInicial
             // 

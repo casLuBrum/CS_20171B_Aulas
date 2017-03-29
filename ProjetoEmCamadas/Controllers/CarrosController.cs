@@ -1,18 +1,19 @@
 ﻿using Models;
+using System;
 using System.Collections.Generic;
 
 namespace Controllers
 {
-    class CarrosController
+    public class CarrosController
     {
         private static List<Carro> listaCarros = new List<Carro>();
 
-        public void Adicionar(string modelo, int ano)
+        public void Adicionar(string modelo, String ano)
         {
             Carro car = new Carro();
             car.CarroID = listaCarros.Count + 1;
             car.Modelo = modelo;
-            car.Ano = ano;
+            car.Ano = Convert.ToInt32(ano);
 
             listaCarros.Add(car);
         }
@@ -34,14 +35,14 @@ namespace Controllers
             return BuscaPorID(id);
         }
 
-        public void Editar(int id, string novoModelo, int novoAno)
+        public void Editar(int id, string novoModelo, string novoAno)
         {
             Carro car = BuscaPorID(id);
 
             if(car != null)
             {
                 car.Modelo = novoModelo;
-                car.Ano = novoAno;
+                car.Ano = Convert.ToInt32(novoAno);
             }
         }
 

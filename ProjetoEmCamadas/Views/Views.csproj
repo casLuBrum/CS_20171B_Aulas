@@ -47,17 +47,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmCadastroCarro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroCarro.Designer.cs">
+      <DependentUpon>frmCadastroCarro.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCadastroCliente.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmCadastroCliente.Designer.cs">
       <DependentUpon>frmCadastroCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmDetalhesCarro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDetalhesCarro.Designer.cs">
+      <DependentUpon>frmDetalhesCarro.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDetalhesCliente.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmDetalhesCliente.Designer.cs">
       <DependentUpon>frmDetalhesCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListagemCarros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListagemCarros.Designer.cs">
+      <DependentUpon>frmListagemCarros.cs</DependentUpon>
     </Compile>
     <Compile Include="frmListagemClientes.cs">
       <SubType>Form</SubType>
@@ -79,11 +97,20 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmCadastroCarro.resx">
+      <DependentUpon>frmCadastroCarro.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmCadastroCliente.resx">
       <DependentUpon>frmCadastroCliente.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmDetalhesCarro.resx">
+      <DependentUpon>frmDetalhesCarro.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDetalhesCliente.resx">
       <DependentUpon>frmDetalhesCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListagemCarros.resx">
+      <DependentUpon>frmListagemCarros.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmListagemClientes.resx">
       <DependentUpon>frmListagemClientes.cs</DependentUpon>
